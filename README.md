@@ -39,110 +39,6 @@
 <hr />
 
 <details>
-<summary>Direct Join</summary>
-
-<br/>
-
-- You can `directly join a room` by using link like:
-- https://kombunerpe.github.io/live/join?room=test&roomPassword=0&name=mirotalksfu&audio=0&video=0&screen=0&notify=0&duration=unlimited
-
-    | Params       | Type           | Description               |
-    | ------------ | -------------- | ------------------------- |
-    | room         | string         | Room Id                   |
-    | roomPassword | string/boolean | Room password             |
-    | name         | string         | User name                 |
-    | audio        | boolean        | Audio stream              |
-    | video        | boolean        | Video stream              |
-    | screen       | boolean        | Screen stream             |
-    | notify       | boolean        | Welcome message           |
-    | hide         | boolean        | Hide myself               |
-    | duration     | string         | Meeting duration HH:MM:SS |
-    | token        | string         | JWT                       |
-
-</details>
-
-<details>
-<summary>Documentations</summary>
-
-<br>
-
-- `Rest API:` The [API documentation](https://docs.mirotalk.com/mirotalk-sfu/api/) uses [swagger](https://swagger.io/) at https://kombunerpe.github.io/live/api/v1/docs or check it on live [here](https://kombunerpe.github.io/live/api/v1/docs).
-
-```bash
-# The response will give you the total of rooms and users.
-$ curl -X GET "https://kombunerpe.github.io/live/api/v1/stats" -H "authorization: mirotalksfu_default_secret" -H "Content-Type: application/json"
-# The response will give you the active meetings (default disabled).
-$ curl -X GET "https://kombunerpe.github.io/live/api/v1/meetings" -H "authorization: mirotalksfu_default_secret" -H "Content-Type: application/json"
-# The response will give you a entrypoint / Room URL for your meeting.
-$ curl -X POST "https://kombunerpe.github.io/live/api/v1/meeting" -H "authorization: mirotalksfu_default_secret" -H "Content-Type: application/json"
-# The response will give you a entrypoint / URL for the direct join to the meeting.
-$ curl -X POST "https://kombunerpe.github.io/live/api/v1/join" -H "authorization: mirotalksfu_default_secret" -H "Content-Type: application/json" --data '{"room":"test","roomPassword":"false","name":"mirotalksfu","audio":"false","video":"false","screen":"false","notify":"false","duration":"unlimited"}'
-```
-
-</details>
-
-<details open>
-<summary>Embed a meeting</summary>
-
-<br/>
-
-![iframe](public/images/iframe.png)
-
-To embed a meeting within `your service or app` using an iframe, you can use the following code:
-
-```html
-<iframe
-    allow="camera; microphone; display-capture; fullscreen; clipboard-read; clipboard-write; web-share; autoplay"
-    src="https://kombunerpe.github.io/live/newroom"
-    style="height: 100vh; width: 100vw; border: 0px;"
-></iframe>
-```
-
-</details>
-
-
-
-<!-- <h1 align="center">MiroTalk SFU</h1>
-
-<br />
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/miroslav-pejic-976a07101/">![Author](https://img.shields.io/badge/Author-Miroslav_Pejic-brightgreen.svg)</a>
-<a href="https://choosealicense.com/licenses/agpl-3.0/">![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3_Open_Surce-blue.svg)</a>
-<a href="https://codecanyon.net/item/mirotalk-sfu-webrtc-realtime-video-conferences/40769970">![License: Regular](https://img.shields.io/badge/License-Regular_Private_Use-lightblue.svg)</a>
-<a href="https://codecanyon.net/item/mirotalk-sfu-webrtc-realtime-video-conferences/40769970">![License: Extended](https://img.shields.io/badge/License-Extended_Commercial_Use-darkgreen.svg)</a>
-<a href="https://discord.gg/rgGYfeYW3N">![Community](https://img.shields.io/badge/Community-forum-pink.svg)</a>
-
-</div>
-
-<p align="center">Free WebRTC - SFU - Simple, Secure, Scalable Real-Time Video Conferences with support for up to 8k resolution and 60fps. It's compatible with all major browsers and platforms</p>
-
-<hr />
-
-<p align="center">
-    <a href="https://sfu.mirotalk.com/">Explore MiroTalk SFU</a>
-</p>
-
-<hr />
-
-<p align="center">
-    <a href="https://sfu.mirotalk.com/">
-        <img src="public/images/mirotalksfu-header.gif">
-    </a>
-</p>
-
-<hr />
-
-<strong>
-    <p align="center">
-        Join our Community for questions, help, support, ideas, and discussions on <a href='https://discord.gg/rgGYfeYW3N'>Discord</a>
-    </p>
-</strong>
-
-<hr />
-
-<details>
 <summary>Features</summary>
 
 <br/>
@@ -560,4 +456,4 @@ Try also [MiroTalk WEB](https://github.com/miroslavpejic85/mirotalkwebrtc) a pla
 
 This project is tested with [BrowserStack](https://www.browserstack.com).
 
---- -->
+---
