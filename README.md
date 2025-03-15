@@ -12,7 +12,7 @@
 
 </div>
 
-<p align="center">Free WebRTC - SFU - Simple, Secure, Scalable Real-Time Video Conferences with support for up to 8k resolution and 60fps. It's compatible with all major browsers and platforms</p>
+<!-- <p align="center">Free WebRTC - SFU - Simple, Secure, Scalable Real-Time Video Conferences with support for up to 8k resolution and 60fps. It's compatible with all major browsers and platforms</p>
 
 <hr />
 
@@ -262,7 +262,7 @@ $ docker-compose down
 
 To embed a meeting within `your service or app` using an iframe, you can use the following code:
 
-```html
+```html -->
 <iframe
     allow="camera; microphone; display-capture; fullscreen; clipboard-read; clipboard-write; web-share; autoplay"
     src="https://sfu.mirotalk.com/newroom"
